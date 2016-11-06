@@ -1,0 +1,72 @@
+<html>
+
+<head>
+
+<meta charset="utf-8"/>
+
+    <link href="formulaire.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="formulaire.js"></script>
+
+</head>
+
+<body>
+<h1> Saisie d'une fiche "Personne"</h1>
+<form action="cv.html" method="post">
+<table>
+ <tr> 
+    <td>
+       <label>Nom</label>
+    </td>
+	<td>
+       <input type="text" name="nom" id="nom"  placeholder="Ecrivez votre nom" required/>
+	</td>
+ </tr>
+
+
+ <tr> 
+    <td>
+	  <label>Prénom</label>
+    </td>
+	<td>
+       <input type="text" name="prénom" id="prénom"  placeholder="Ecrivez votre prénom" required/>
+    </td>
+</tr> 
+
+</tr> 
+    <td>
+       <label>Date de naissance </label>
+    </td>
+	<td>
+       <input type="date" name="date" id="date" placeholder="JJ/MM/AAAA" required/>
+	</td>
+ </tr> 
+ 
+ <tr> 
+    <td>
+       <label> Adresse postale </label>
+    </td>
+	<td>
+  <input type="number" id="ad-pos" name="ad-pos"   required/>
+    </td>
+ </tr> 
+ 
+ 
+<tr> 
+    <td>
+  <label>Mail</label>
+    </td>
+	<td>
+  <input type="email" name="mail" id="mail"  placeholder="aaaa@gmail.aa" required/>
+    </td>
+</tr>
+</table> 
+<p>
+   <input type="button" value="valider" onclick="validation();" />
+   <input type="reset" value="Annuler" />
+</p>
+<div id="error"></div>
+<div id="resultat"></div>
+</form>
+
+</body>
+</html>
