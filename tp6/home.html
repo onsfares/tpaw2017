@@ -2,18 +2,18 @@
 <head>
 <meta charset="utf-8"/>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="route.js"></script>
+  <script src="controler.js"></script>
 </head>
 <body>
 <form id="searchCity">
 <div class="input-group">
   <div class="input-group-btn">
- <button  class="btn btn-info" >GPS</button>
+ <button  class="btn btn-info" ng-click="gps()" >GPS</button>
   </div>
-<input type="search" class="form-control" id="city" required placeholder="City..."/>
+<input type="search" class="form-control" id="city"  ng-model="city" required placeholder="City..."/>
 <div class="input-group-btn">
 
- <button type="submit"  class="btn btn-primary" onclick="">Recherche</button>
+ <button type="submit"  class="btn btn-primary" ng-click="recherhce()">Recherche</button>
   </div>
 
 </div>
